@@ -1,0 +1,2 @@
+name,url,language,created_since,updated_since,contributor_count,org_count,commit_frequency,recent_releases_count,updated_issues_count,closed_issues_count,comment_frequency,dependents_count,criticality_score
+reposcore,https://github.com/kunpengcompute/reposcore,Python,2,0,7,3,1.7,36,9,0,1.4,0,0.2812
