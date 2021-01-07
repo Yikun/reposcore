@@ -18,9 +18,21 @@ import sys
 import time
 
 from criticality_score import run
+from criticality_score import constants
+
+
+def init_constants():
+    # See more constants in:
+    # https://github.com/ossf/criticality_score/blob/main/criticality_score/constants.py
+    run.CONTRIBUTOR_COUNT_WEIGHT = 1
+    run.ORG_COUNT_WEIGHT = 0.5
+    run.COMMIT_FREQUENCY_WEIGHT = 4
+    run.COMMENT_FREQUENCY_WEIGHT = 0.5
+    run.DEPENDENTS_COUNT_WEIGHT = 1
 
 
 def main():
+    init_constants()
     parser = argparse.ArgumentParser(
         description=
         'Generate a sorted criticality score list for input projects .')
